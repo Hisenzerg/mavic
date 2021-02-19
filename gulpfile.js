@@ -54,7 +54,7 @@ function libsCss() {
    return src([
       'node_modules/normalize.css/normalize.css',
       'node_modules/slick-carousel/slick/slick.css',
-      'node_modules/fullpage.js/dist/fullpage.css',
+      // 'node_modules/fullpage.js/dist/fullpage.css',
    ])
       .pipe(scss({ outputStyle: 'compressed' }))
       .pipe(concat('libs.min.css'))
@@ -80,7 +80,9 @@ function libsJs() {
    return src([
       'node_modules/jquery/dist/jquery.js',
       'node_modules/slick-carousel/slick/slick.js',
-      'node_modules/fullpage.js/dist/fullpage.js',
+      'node_modules/jquery-scrollify/jquery.scrollify.js',
+      // 'node_modules/fullpage.js/dist/fullpage.js',
+      // 'node_modules/fullpage.js/dist/fullpage.extensions.min.js'
    ])
       .pipe(concat('libs.min.js'))
       .pipe(uglify())

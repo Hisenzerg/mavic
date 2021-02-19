@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "fullpage.js": "^3.0.9",
+    "jquery-scrollify": "^1.0.21",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   }

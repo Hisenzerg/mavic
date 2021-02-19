@@ -11,14 +11,35 @@ $(function(){
         $('.questions__item-title').not(this).removeClass('in').next().slideUp();
      });
 
-     
-    $('#fullpage').fullpage({
-        autoScrolling:true,
-        scrollHorizontally: true,
-        sectionSelector: '.page-section',
+    
+
+     $.scrollify({
+        section : ".page-section",
+        interstitialSection : "",
+        easing: "easeOutExpo",
+        scrollSpeed: 150,
+        offset : 0,
+        scrollbars: false,
+        standardScrollElements: "",
+        setHeights: false,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll:true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {},
+        afterRender:function() {}
       });
+     
+    // $('#fullpage').fullpage({
+    //     licenseKey: 'KX7eswJ?l4',
+    //     autoScrolling: true,
+    //     scrollHorizontally: true,
+    //     sectionSelector: '.page-section',
+    //   });
   
 });
+
 
 
 
