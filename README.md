@@ -1,1 +1,1 @@
-# See full website hisenzerg.github.io/mavic/dist
+# See full website https://hisenzerg.github.io/mavic/dist
